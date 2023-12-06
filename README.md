@@ -16,6 +16,8 @@ Develop scripts to automate scenarios.
 
 ### `https://restful-booker.herokuapp.com/booking/:id`
 
+`https://restful-booker.herokuapp.com/booking/1`
+
 The tool that I will Use in this case in python,using the flask framework. This will allow me to use python unittests library to test the logic of the code.
 
 Flask is a python framework.
