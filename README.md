@@ -68,3 +68,7 @@ Objective: Develop a Comprehensive set of test cases for the `Sign Up` feature, 
 2. The user interface not throwing an error showing duplicate registration, or a username taken.
 
 ### `Task 2: Exploratory Testing and Bug Reporting` 
+
+- Identify and Document any bugs of Glitches.
+
+- For Each Issue, Provide a title, a brief description, steps to reproduce, expected vs actual results and severuty assessment
