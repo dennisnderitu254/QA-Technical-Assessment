@@ -26,7 +26,7 @@ Objective: Develop a Comprehensive set of test cases for the `Sign Up` feature, 
 
 6. Validate password confirmation:
 
-7. Handle duplicate userregistration attempts:
+7. Handle duplicate user registration attempts:
 
 8. Clear form Data upon successful registration:
 
@@ -44,14 +44,27 @@ Objective: Develop a Comprehensive set of test cases for the `Sign Up` feature, 
 
 #### Accessibility Test Cases 
 
-1. Verify Kenyboard accessibility:
+1. Verify Keyboard accessibility:
 
 2. Test Color Contrast ans Readability:
 
 3. Check is the reader is able to see the input fields and text
 
-4. Form navigation: THe user should be able to move from one field to the next with ease, for good user experience.
+4. Form navigation: The user should be able to move from one field to the next with ease, for good user experience.
 
 #### `Positive and Negative Scenarios in the user Sign Up Test Case`
 
 #### `Positive Scenarios`
+
+1. The user is able to access the keyboard an input fields
+
+2. The error messages are visible and clear for the user, this is seen when the input field of a required field
+   is highlighted through an error message.
+
+#### `Negative Scenarios`
+
+1. The user is not able to input fields properly in the form, and no message is sent to alert of correct.
+
+2. The user interface not throwing an error showing duplicate registration, or a username taken.
+
+### `Task 2: Exploratory Testing and Bug Reporting` 
