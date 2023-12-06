@@ -12,7 +12,7 @@ Objective: Develop a Comprehensive set of test cases for the `Sign Up` feature, 
 
 ### `Test Cases for the Sign Up Feature`
 
-Functional Test Cases
+#### Functional Test Cases
 
 1. Verify the prescence of required fields: Ensure all mandatory fields, such as Username, email, password are there, confirm password, as seen in the registration form.
 
@@ -28,4 +28,30 @@ Functional Test Cases
 
 7. Handle duplicate userregistration attempts:
 
-8. CLear form Data upon successful registration:
+8. Clear form Data upon successful registration:
+
+#### User Interface Test Cases
+
+1. Check for Clear Labels on fields
+
+2. Verify proper field Formating
+
+3. Test Error Message visibility and clarity
+
+4. Evaluate form layout and responsiveness
+
+5. Test input validation feedback mechanisms
+
+#### Accessibility Test Cases 
+
+1. Verify Kenyboard accessibility:
+
+2. Test Color Contrast ans Readability:
+
+3. Check is the reader is able to see the input fields and text
+
+4. Form navigation: THe user should be able to move from one field to the next with ease, for good user experience.
+
+#### `Positive and Negative Scenarios in the user Sign Up Test Case`
+
+#### `Positive Scenarios`
