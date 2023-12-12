@@ -18,15 +18,63 @@ Develop scripts to automate scenarios.
 
 `https://restful-booker.herokuapp.com/booking/1`
 
-The tool that I will Use in this case in python,using the flask framework. This will allow me to use python unittests library to test the logic of the code.
+# API Test Script Development for Restful Booker
 
-Flask is a python framework.
+## Automation of Test Case Scenarios With The Below Payload
 
-`Installation`
+```
+{
+  "firstname": "James",
+  "lastname": "Brown",
+  "totalprice": 111,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2018-01-01",
+    "checkout": "2019-01-01"
+  },
+  "additionalneeds": "Breakfast"
+}
+```
 
-In this project, I will utilize a virtual environment, which will allow me to install the flask framework, separate from the operating system, Instead of installing it globally.
+Install the Requests Library
 
+```
+pip install requests
+```
 
-### Indentification of Different Test Scenarios, factoring in various user states and data conditions
+Python Script that Automates the Test Case Scenarios
 
+```
+import requests
 
+# URL and payload data
+url = 'https://restful-booker.herokuapp.com/booking/1'
+headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'Cookie': 'token=abc123'
+}
+payload = {
+    "firstname": "James",
+    "lastname": "Brown",
+    "totalprice": 111,
+    "depositpaid": True,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Breakfast"
+}
+
+# Send PUT request
+response = requests.put(url, headers=headers, json=payload)
+
+# Check response status and content
+if response.status_code == 200:
+    print("Booking created successfully!")
+    print("Response:", response.json())
+else:
+    print("Failed to create booking.")
+    print("Status Code:", response.status_code)
+    print("Response:", response.text)
+```
